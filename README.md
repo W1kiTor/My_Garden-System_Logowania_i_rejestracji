@@ -51,5 +51,9 @@ Celem projektu 'MyGarden' było stworzenie systemu logowania i rejestracji, któ
 | nickname  | VARCHAR(50)  | UNIQUE                      | Nazwa użytkownika         |
 | password  | VARCHAR(255) | —                           | Hasło użytkownika         |
 
+## Dodatkowe uwagi
+Należy upewnić się czy dane z pliku **database_connect.php** zgadzają się z uruchomioną bazą danych.
+
 ## Autor
+
 Projekt wykonany przez **Wiktora Kowalskiego** - W1kiTor
