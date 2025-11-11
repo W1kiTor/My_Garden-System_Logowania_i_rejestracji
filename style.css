@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nasalization&display=swap');
+
+body 
+{
+    font-family: 'Nasalization', sans-serif;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #e0e6ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.top-bar 
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.container 
+{
+    background: rgba(28, 43, 66, 0.95);
+    border-radius: 20px;
+    padding: 40px 50px;
+    box-shadow: 0 0 20px rgba(0, 180, 255, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    border: 1px solid rgba(0, 120, 200, 0.3);
+}
+
+h1, h2, h3 
+{
+    color: #9fd4ff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px rgba(0, 180, 255, 0.4);
+}
+
+p 
+{
+    color: #b8c7da;
+    line-height: 1.6;
+}
+
+input[type="name"],
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #4a6fa1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    background-color: rgba(17, 34, 51, 0.9);
+    color: #e0e6ed;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus 
+{
+    border-color: #00b4ff;
+    box-shadow: 0 0 6px rgba(0, 180, 255, 0.4);
+}
+
+button,
+input[type="submit"]
+{
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover 
+{
+    background: linear-gradient(90deg, #00b4d8, #90e0ef);
+    transform: translateY(-2px);
+}
+
+a 
+{
+    color: #00b4ff;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    text-decoration: underline;
+}
+
+@keyframes backgroundGlow 
+{
+    0% { background: #0d1b2a; }
+    50% { background: #142d4c; }
+    100% { background: #0d1b2a; }
+}
+
+body 
+{
+    animation: backgroundGlow 20s infinite alternate ease-in-out;
+}
